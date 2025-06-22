@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric Air Purification System for Particulate Matter</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: white;
+        }
+        h2 {
+            color: #1e3c72;
+            border-bottom: 3px solid #f39c12;
+            padding-bottom: 8px;
+            margin-top: 40px;
+        }
+        h3 {
+            color: #2980b9;
+            margin-top: 25px;
+        }
+        .overview {
+            background-color: #ebf5fb;
+            padding: 20px;
+            border-left: 5px solid #3498db;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+        .component {
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            border-top: 3px solid #f39c12;
+        }
+        .workflow {
+            background-color: #fef9e7;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 35px 0;
+            border-left: 5px solid #f39c12;
+        }
+        .workflow ol {
+            padding-left: 25px;
+        }
+        .workflow li {
+            margin-bottom: 12px;
+            padding-left: 10px;
+        }
+        .conclusion {
+            background: linear-gradient(to right, #ebf5fb 0%, #fef9e7 100%);
+            padding: 25px;
+            border-radius: 8px;
+            margin-top: 40px;
+            border: 1px solid #eaeaea;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #7f8c8d;
+            font-size: 0.9em;
+            background-color: #1e3c72;
+            color: white;
+            border-radius: 8px;
+        }
+        .image-container {
+            margin: 30px 0;
+            text-align: center;
+        }
+        .image-container img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border: 1px solid #ddd;
+        }
+        .image-caption {
+            font-style: italic;
+            color: #666;
+            margin-top: 8px;
+        }
+        .team-photo {
+            width: 80%;
+            margin: 20px auto;
+            display: block;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #f39c12;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #e67e22;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Electric Air Purification System for Particulate Matter</h1>
+        <p>A smart solution for real-time air quality monitoring and filtration</p>
+        <a href="#contact" class="btn">Contact the Team</a>
+    </header>
+
+    <div class="overview">
+        <h2>Overview</h2>
+        <p>The <strong>Electric Air Purification System for Particulate Matter</strong> is a smart air purifier designed to monitor and filter harmful particles like PM₂.₅ and PM₁₀ in real time. Developed by a team of electrical engineering students, the system integrates a microcontroller, high-precision sensors, and an adaptive filtration mechanism to provide an efficient and affordable solution for indoor air quality management.</p>
+        
+        <div class="image-container">
+            <!-- Placeholder for project overview image -->
+            <img src="FYPPics/project-overview.jpg" alt="Project Overview Diagram">
+            <p class="image-caption">Figure 1: System overview diagram showing main components</p>
+        </div>
+    </div>
+
+    <h2>Key Components and Assembly</h2>
+
+    <div class="component">
+        <h3>1. Microcontroller (Central Processing Unit)</h3>
+        <ul>
+            <li><strong>Options</strong>: Tiva TM4CH6PM or ESP32 microcontroller</li>
+            <li><strong>Role</strong>: Acts as the brain of the system, processing sensor data and controlling the fan and filtration system</li>
+            <li><strong>Communication</strong>: Uses I²C protocol for efficient data transfer between components</li>
+        </ul>
+        
+        <div class="image-container">
+            <!-- Placeholder for microcontroller image -->
+            <img src="FYPPics/microcontroller.jpg" alt="Microcontroller Unit">
+            <p class="image-caption">Figure 2: Tiva and ESP32 microcontrollers used in the project</p>
+        </div>
+    </div>
+
+    <div class="component">
+        <h3>2. Sensor Module</h3>
+        <ul>
+            <li><strong>Sensor</strong>: SN-GCJA5 laser-based particulate matter sensor</li>
+            <li><strong>Function</strong>: Continuously monitors air quality by detecting PM₂.₅ and PM₁₀ concentrations</li>
+            <li><strong>Data Handling</strong>: Sends real-time data to the microcontroller for analysis and response</li>
+        </ul>
+        
+        <div class="image-container">
+            <!-- Placeholder for sensor image -->
+            <img src="FYPPics/sensor.jpg" alt="PM Sensor Module">
+            <p class="image-caption">Figure 3: SN-GCJA5 laser PM sensor in operation</p>
+        </div>
+    </div>
+
+    <div class="component">
+        <h3>3. Filtration System</h3>
+        <ul>
+            <li><strong>Filter Material</strong>: Activated charcoal-coated car AC filters</li>
+            <li><strong>Mechanism</strong>: The adsorbent layer captures PM₂.₅ and PM₁₀ particles as air passes through</li>
+            <li><strong>Testing</strong>: Initial trials used car AC filters to evaluate adsorption efficiency before finalizing the design</li>
+        </ul>
+        
+        <div class="image-container">
+            <!-- Placeholder for filter image -->
+            <img src="filtration-system.jpg" alt="Filtration System">
+            <p class="image-caption">Figure 4: Activated charcoal-coated filter assembly</p>
+        </div>
+    </div>
+
+    <div class="component">
+        <h3>4. Fan Control</h3>
+        <ul>
+            <li><strong>Adjustable Fan</strong>: Dynamically changes speed based on air quality readings
+                <ul>
+                    <li><strong>High Pollution</strong>: Increases fan speed for intensive filtration</li>
+                    <li><strong>Low Pollution</strong>: Reduces speed to save energy</li>
+                </ul>
+            </li>
+            <li><strong>Integration</strong>: Controlled by the microcontroller using real-time sensor feedback</li>
+        </ul>
+        
+        <div class="image-container">
+            <!-- Placeholder for fan image -->
+            <img src="fan-control.jpg" alt="Fan Control System">
+            <p class="image-caption">Figure 5: Variable speed fan mechanism</p>
+        </div>
+    </div>
+
+    <div class="component">
+        <h3>5. User Interface</h3>
+        <ul>
+            <li><strong>Platform</strong>: Web-based interface accessible via Wi-Fi or Bluetooth</li>
+            <li><strong>Features</strong>:
+                <ul>
+                    <li>Displays live air quality data (PM₂.₅, PM₁₀ levels)</li>
+                    <li>Allows remote control of purifier settings (fan speed, on/off)</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <div class="image-container">
+            <!-- Placeholder for UI image -->
+            <img src="user-interface.jpg" alt="User Interface">
+            <p class="image-caption">Figure 6: Web-based user interface for monitoring and control</p>
+        </div>
+    </div>
+
+    <div class="workflow">
+        <h2>System Workflow</h2>
+        <ol>
+            <li><strong>Detection</strong>: The SN-GCJA5 sensor detects particulate matter levels in the air</li>
+            <li><strong>Data Processing</strong>: The microcontroller analyzes the sensor data and determines the required fan speed</li>
+            <li><strong>Filtration</strong>: Polluted air is drawn through the charcoal-coated filter, where particles are adsorbed</li>
+            <li><strong>User Feedback</strong>: Real-time air quality metrics are displayed on the web interface, with options for manual override</li>
+        </ol>
+        
+        <div class="image-container">
+            <!-- Placeholder for workflow diagram -->
+            <img src="workflow-diagram.jpg" alt="System Workflow Diagram">
+            <p class="image-caption">Figure 7: Complete system workflow diagram</p>
+        </div>
+    </div>
+
+    <h2>Testing and Evaluation</h2>
+    <ul>
+        <li><strong>Performance</strong>: Tested in varied environments to assess filtration efficiency and power consumption</li>
+        <li><strong>Benchmarks</strong>: Compared against industry standards to ensure compliance</li>
+        <li><strong>Outcome</strong>: The system demonstrated responsive adaptation to pollution levels while maintaining energy efficiency</li>
+    </ul>
+    
+    <div class="image-container">
+        <!-- Placeholder for testing image -->
+        <img src="testing-setup.jpg" alt="Testing Setup">
+        <p class="image-caption">Figure 8: System under testing in controlled environment</p>
+    </div>
+
+    <div class="conclusion">
+        <h2>Conclusion</h2>
+        <p>This project delivers a <strong>cost-effective, smart air purifier</strong> that addresses indoor air pollution through real-time monitoring and automated filtration. By leveraging affordable materials (e.g., repurposed car filters) and IoT-enabled controls, the team aims to make air quality management accessible in regions like Pakistan, where pollution poses significant health risks.</p>
+        
+        <div class="image-container">
+            <!-- Placeholder for final prototype image -->
+            <img src="final-prototype.jpg" alt="Final Prototype">
+            <p class="image-caption">Figure 9: Completed air purification system prototype</p>
+        </div>
+        
+        <p>For further details, refer to the full thesis or contact the team.</p>
+        <a href="#contact" class="btn">Contact the Team</a>
+    </div>
+
+    <div id="contact">
+        <h2>Project Team</h2>
+        <div class="image-container">
+            <!-- Placeholder for team photo -->
+            <img src="team-photo.jpg" alt="Project Team" class="team-photo">
+            <p class="image-caption">The project development team</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Electric Air Purification System Project | Department of Electrical Engineering</p>
+        <p>© 2021 University of Engineering and Technology Lahore</p>
+    </footer>
+</body>
+</html>
